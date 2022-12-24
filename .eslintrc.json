@@ -1,3 +1,32 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": [
+    "tailwindcss"
+  ],
+  "rules": {
+    "quotes": [
+      "warn",
+      "double"
+    ],
+    "comma-dangle": [
+      "warn",
+      "always-multiline"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "eol-last": [
+      "warn",
+      "always"
+    ]
+  },
+  "settings": {
+    "tailwindcss": {
+      "officialSorting": true
+    }
+  }
 }
