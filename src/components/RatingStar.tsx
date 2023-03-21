@@ -12,7 +12,7 @@ export function RatingStar(props: RatingStarProps) {
     return (
         // 訪問済: ★★★★★★★★☆☆
         // 未訪問: ☆☆☆☆☆☆☆☆
-        <div className="my-2 flex flex-row text-xl leading-none">
+        <div className="flex flex-row text-xl leading-none">
             {props.isVisited ? (
                 [...range(1, 10)].map(i => (
                     <span key={i} className={`flex place-items-center text-2xl ${(i <= props.rate) ? "text-yellow-300" : "text-gray-200"}`}>★</span>
